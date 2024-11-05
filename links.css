@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --clr1:rgb(21,12,104);
+    --clr2:rgb(236,68,90);
+    --clr3:#fff;
+    --clr4:#000;
+    --clr5:lightgray;
+    --clr6: yellow;
+   }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'PT Sans', sans-serif;
+    border: none;
+}
+html {
+    font-size: 56.5%;
+    /* font-size: 10px;
+    font-size: 1rem; */
+    overflow-x: hidden;
+    scroll-behaviour:smooth;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--clr1);
+}
+
+       /* header section */
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--clr1);
+    padding: 2em 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.head .navbar {
+    font-size: 1.8rem;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.head .navbar a {
+    padding-left:1.5rem;
+    color: var(--clr3);
+}
+
+#menu-bar {
+    display: none;
+    color: var(--clr3);
+}      
+.head .navbar a:hover {
+    color: var(--clr2);
+   border: 1px solid white;
+}
+
+@media (max-width: 767px) {
+.head .navbar {
+    position: absolute;
+    top: 70px;
+    
+     right: 0; 
+    background: var(--clr1);
+    flex-direction: column;
+    width: 100%;
+    flex-direction: column;
+    
+    display: none;
+}
+.head .navbar .active {
+    max-height: 500px;
+}
+
+.head .navbar a {
+    padding: 1rem;
+    border-top: 1px solid var(--clr3);
+    /* text-align: center; */
+    left: 5rem;
+}
+
+#menu-bar {
+    display: block;
+    scale: 2;
+}
+}
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 7rem auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 50%;
+    height: 3px;
+    background: #007BFF;
+    margin: 0 auto 20px; /* Centered */
+    animation: expand 1s forwards; /* Animation for underline */
+}
+
+@keyframes expand {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.link-list {
+    list-style-type: none;
+    flex: 1; /* Left half */
+    margin-right: 20px; /* Space between links and image */
+}
+
+.link-list li {
+    margin: 15px 0;
+    transition: transform 0.3s;
+}
+
+.link-list li:hover {
+    transform: translateY(-5px);
+}
+
+.link-list a {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.link-list a i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.link-list a.youtube {
+    color: #FF0000; /* YouTube color */
+}
+
+.link-list a.facebook {
+    color: #1877F2; /* Facebook color */
+}
+
+.link-list a.instagram {
+    color: #C13584; /* Instagram color */
+}
+
+.link-list a.email {
+    color: #000000; /* Email color */
+}
+
+.link-list a.whatsapp {
+    color: #25D366; /* WhatsApp color */
+}
+
+.link-list a.phone {
+    color: #000000; /* Phone color */
+}
+
+.profile-image {
+    width: 90%; /* Cover 90% of right side */
+    height: auto;
+    border-radius: 8px; /* Optional */
+}
+
+/* Animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 100%; /* Adjust image size for smaller screens */
+    }
+
+    .link-list a {
+        font-size: 1.2em;
+    }
+}

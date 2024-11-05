@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --clr1:rgb(21,12,104);
+    --clr2:rgb(236,68,90);
+    --clr3:#fff;
+    --clr4:#000;
+    --clr5:lightgray;
+    --clr6: yellow;
+   }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'PT Sans', sans-serif;
+    border: none;
+}
+html {
+    font-size: 56.5%;
+    /* font-size: 10px;
+    font-size: 1rem; */
+    overflow-x: hidden;
+    scroll-behaviour:smooth;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--clr1);
+}
+
+       /* header section */
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--clr1);
+    padding: 2em 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.head .navbar {
+    font-size: 1.8rem;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.head .navbar a {
+    padding-left:1.5rem;
+    color: var(--clr3);
+}
+
+#menu-bar {
+    display: none;
+    color: var(--clr3);
+}      
+.head .navbar a:hover {
+    color: var(--clr2);
+   border: 1px solid white;
+}
+
+
+/* ABOUT US */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-top: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: var(--clr2);
+}
+
+.more-text {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .photo {
+        margin-top: 20px;
+    }
+}
+
+
+    /* about us ends */
+
+@media (max-width: 767px) {
+.head .navbar {
+    position: absolute;
+    top: 70px;
+    
+     right: 0; 
+    background: var(--clr1);
+    flex-direction: column;
+    width: 100%;
+    flex-direction: column;
+    
+    display: none;
+}
+.head .navbar .active {
+    max-height: 500px;
+}
+
+.head .navbar a {
+    padding: 1rem;
+    border-top: 1px solid var(--clr3);
+    /* text-align: center; */
+    left: 5rem;
+}
+
+#menu-bar {
+    display: block;
+    scale: 2;
+}
+
+/* ABOUT US */
+
+}

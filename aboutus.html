@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+     <!-- font custom library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- custom css -->
+      <link rel="stylesheet" href="aboutus.css">
+
+</head>
+<body>
+      <!-- header -->
+    <header class="head">
+        
+            <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <!-- <a href="gallery.html">Gallery</a> -->
+            <a href="links.html">Links</a>
+          
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+      </header>
+
+                <!-- ABOUT US -->
+                <div class="container">
+                    <div class="content">
+                        <h1>ABOUT US</h1>
+                        <h2>माँ पूर्णागिरि फ्लावर डेकोरेशन</h2>
+                        <p>अपने कार्यक्रम को अविस्मरणीय बनाने के लिए, हमें फोन नंबर 97941 23529 पर संपर्क करें और अपनी फूल सजावट की जरूरतों को हमारे साथ साझा करें।</p>
+                        <button class="read-more-btn" onclick="toggleText()">READ MORE</button>
+                        <div id="moreText" class="more-text" style="display: none;">
+                            <p>हमारी सेवाएं पंकी, रतनपुर, गंगागंज, कल्याणपुर, आवास विकास, बर्रा और कानपुर के अन्य प्रमुख क्षेत्रों में उपलब्ध हैं। चाहे आपको शादी की सजावट करनी हो या किसी कॉर्पोरेट इवेंट के लिए फूलों की आवश्यकता हो, हमारी दुकान हमेशा आपके साथ है।</p>
+                            <p>हमारे विशेषज्ञ हर आयोजन को खास और यादगार बनाने के लिए कड़ी मेहनत करते हैं, जिससे हर ग्राहक का अनुभव आनंदमय और संतोषजनक हो।</p>
+                            <p>हमारी दुकान की एक और खासियत यह है कि हम कानपुर के विभिन्न इलाकों में भी सेवा प्रदान करते हैं जैसे: शास्त्री नगर, स्वरूप नगर, किदवई नगर, गोविन्द नगर और नौबस्ता। हमारी कुशल टीम हर छोटे-बड़े आयोजन को विशेष और यादगार बनाने के लिए समर्पित है।</p>
+                            <p>अपने कार्यक्रम को अविस्मरणीय बनाने के लिए, हमें फोन नंबर 97941 23529 पर संपर्क करें और अपनी फूल सजावट की जरूरतों को हमारे साथ साझा करें। </p>
+                            <p>हमारी दुकान की सेवा का अनुभव करें और अपने हर आयोजन को एक नया जादू और सुंदरता प्रदान करें।</p>
+                            <p>अपने कार्यक्रम को अविस्मरणीय बनाने के लिए, हमें फोन नंबर 97941 23529 पर संपर्क करें और अपनी फूल सजावट की जरूरतों को हमारे साथ साझा करें। हमारी दुकान की सेवा का अनुभव करें और अपने हर आयोजन को एक नया जादू और सुंदरता प्रदान करें। </p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="about us photographer.jpg" alt="Photographer">
+                    </div>
+                </div>
+            
+                <script>
+                    function toggleText() {
+                        const moreText = document.getElementById("moreText");
+                        if (moreText.style.display === "none") {
+                            moreText.style.display = "block";
+                        } else {
+                            moreText.style.display = "none";
+                        }
+                    }
+                </script>
+                <!-- ABOUT US ENDS -->
+      <script>
+        document.getElementById('menu-bar').addEventListener('click', function() {
+    const navbar = document.querySelector('.navbar');
+    if (navbar.style.display === 'flex') {
+        navbar.style.display = 'none';
+    } else {
+        navbar.style.display = 'flex';
+    }
+});
+      </script>
+</body>
+</html>

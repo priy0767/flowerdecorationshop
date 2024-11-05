@@ -1,0 +1,90 @@
+@media (max-width: 767px) {
+    .head .navbar {
+        position: absolute;
+        top: 70px;
+        
+         right: 0; 
+        background: var(--clr1);
+        flex-direction: column;
+        width: 100%;
+        flex-direction: column;
+        
+        display: none;
+    }
+    .head .navbar .active {
+        max-height: 500px;
+    }
+    
+    .head .navbar a {
+        padding: 1rem;
+        border-top: 1px solid var(--clr3);
+        /* text-align: center; */
+        left: 5rem;
+    }
+    
+    #menu-bar {
+        display: block;
+        scale: 2;
+    }
+
+
+
+
+
+    /* banner-section */
+    .text-box {
+        padding: 10px 20px; /* Smaller padding for smaller screens */
+      }
+    
+      .text-box h2 {
+        font-size: 18px; /* Smaller text size for better readability */
+      }
+    
+      .dot {
+        width: 10px;  /* Smaller dots */
+        height: 10px;
+      }
+    
+      .dots {
+        bottom: 10px; /* Move dots closer to the bottom */
+      }
+       /* banner section ends  */
+       
+       /* container */
+       .container {
+        flex-direction: column;
+        height: auto; /* Allow height to adjust */
+    }
+
+    .left, .right {
+        width: 100%; /* Full width for both sections */
+    }
+
+    .left {
+        height: 50vh; /* Adjust height if needed */
+    }
+    /* container ends */
+    
+    /* overlay image */
+    .overlay-text {
+        font-size: 2rem; /* Smaller font size for small screens */
+    }
+    /* over lay ends */
+
+    /* video section */
+    .youtube {
+        grid-template-columns: 1fr; /* Stack videos vertically on small screens */
+    }
+    /* video-section */
+
+    /* footer */
+    .footer {
+        width: 100vw;
+        height: 18vw;
+    }
+
+   
+
+}
+
+      

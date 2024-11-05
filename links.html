@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Links</title>
+     <!-- font custom library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- custom css -->
+      <link rel="stylesheet" href="links.css">
+
+</head>
+<body>
+      <!-- header -->
+    <header class="head">
+        
+            <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <!-- <a href="gallery.html">Gallery</a> -->
+            <a href="aboutus.html">About Us</a>
+          
+        </nav>
+        <div id="menu-bar"><i class="fas fa-bars"></i></div>
+      </header>
+      <!-- header ends -->
+
+      <!-- container -->
+      <div class="container">
+        <h1>Our Links</h1>
+        <div class="underline"></div>
+        <div class="content">
+            <ul class="link-list">
+                <!-- <li><a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i> YouTube</a></li> -->
+                <li><a href="https://www.facebook.com/share/C7xhEKhvZqZDk3PU" target="_blank" class="facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/jhaman___x" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="mailto:vk4382151@gmail.com" class="email"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://wa.me/9794123529" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="tel:+919794123529" class="phone"><i class="fas fa-phone"></i> Phone: +91 97941 23529</a></li>
+            </ul>
+            <img src="photolink.jpg" alt="Your Image" class="profile-image">
+        </div>
+    </div>
+
+
+      <script>
+        document.getElementById('menu-bar').addEventListener('click', function() {
+    const navbar = document.querySelector('.navbar');
+    if (navbar.style.display === 'flex') {
+        navbar.style.display = 'none';
+    } else {
+        navbar.style.display = 'flex';
+    }
+});
+      </script>
+</body>
+</html>
